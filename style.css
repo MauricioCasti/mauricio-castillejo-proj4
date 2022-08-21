@@ -1,0 +1,37 @@
+
+main{
+    display: block;
+    height: 175px;
+}
+
+h1{
+    border-bottom: 1px solid black;
+    padding: 5px;
+    font-weight: bold;
+    color: black;
+}
+
+
+
+
+.area-map{
+    float: right;
+    height: 500px;
+    width: 500px;
+}
+
+ #map {
+    height: 100%;
+}
+  
+  /* 
+   * Optional: Makes the sample page fill the window. 
+   */
+  html,
+  body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  
