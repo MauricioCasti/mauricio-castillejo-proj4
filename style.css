@@ -1,3 +1,15 @@
+* {
+    box-sizing: border-box;
+  }
+
+html,
+body {
+    font-family: 'Times New Roman', Times, serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #ffcb8b;
+}
 
 main{
     display: block;
@@ -6,32 +18,39 @@ main{
 
 h1{
     border-bottom: 1px solid black;
-    padding: 5px;
+    padding-bottom: 10px;
     font-weight: bold;
+    font-size: 1.8em;
     color: black;
 }
 
+p{
+    max-width: 500px;
+}
 
-
+.area-text{
+    padding: 20px;
+    width: 45vw;
+    font-size: 1.5em;
+    float: left;
+}
 
 .area-map{
+    padding: 30px;
     float: right;
-    height: 500px;
-    width: 500px;
+    height: 80vh;
+    width: 50vw;
 }
 
  #map {
     height: 100%;
+    border: 3px solid black;
+    
 }
   
   /* 
    * Optional: Makes the sample page fill the window. 
    */
-  html,
-  body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-  }
+
   
   

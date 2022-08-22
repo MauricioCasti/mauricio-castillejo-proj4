@@ -8,20 +8,30 @@
     <head>
         <title>Simple Map</title>
         <meta charset="UTF-8">
-        <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBwmYrYPRzMq36sHiazyM3E8zJm0rc0my8&callback=initMap&v=weekly" async></script>
+        <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBwmYrYPRzMq36sHiazyM3E8zJm0rc0my8&callback=initMap&v=weekly"></script>
         <script src="script.js" async></script>
         <link rel="stylesheet" href="style.css">
         <!-- jsFiddle will insert css and js -->
     </head>
     <body>
         <main class="main">
-            <h1>Do you know CSUN well? Answer the Questions Below to Find out</h1>
             <section class="area-text">
-                
+                <h1>Do you know CSUN well? Answer the Questions Below to Find out</h1>
+                <p>To guess, you hover your mouse onto the map and double click. Each answer is given in order of the list so you must answer sequentially.</p>
+                <ol>
+                    <li>Sequoia Hall <span id="input1"></span></li>
+                    <li>Jerome Richfield Hall <span id="input2"></span></li>
+                    <li>Art and Design Center <span id="input3"></span></li>
+                    <li>Citrus Hall <span id="input4"></span></li>
+                    <li>College of Education <span id="input5"></span></li>
+                </ol>
+                <div>
+                    <h2> Number Correct: <span id="numCorrect"></span></h2>
+                </div>
             </section>
+
             <section class="area-map">
                 <div id="map"></div>
             </section>
